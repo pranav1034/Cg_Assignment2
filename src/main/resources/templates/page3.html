@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Page 3</title></head>
+<body>
+
+<p>Name: <span th:text="${firstName}"></span> <span th:text="${lastName}"></span></p>
+<p>Email: <span th:text="${email}"></span></p>
+<p>Phone: <span th:text="${phone}"></span></p>
+<form method="post" th:action="@{/page3}">
+    City: <input type="text" name="city" required><br>
+    Country: <input type="text" name="country" required><br>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
